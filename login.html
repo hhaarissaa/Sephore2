@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEPHORA</title>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+
+<section id="header" class="header">
+    <a href="index.html" class="logo">SEPHORA</a>
+    <nav class="navbar">
+    <a href="index.html">home</a>
+    <a href="about.html">about</a>
+    <a href="shop.html">shop</a>
+    <a href="blog.html">blogs</a>
+    <a href="login.html">login</a>
+</nav>
+
+<div class="icons">
+    <div id="menu-btn" class="fas fa-bars"></div>
+    <a href="#" class="fas fa-heart"></a>
+    <a href="#" class="fas fa-shopping-cart"></a>
+</div>
+</section>
+
+<section class="login" id="login">
+    <h2>Login</h2>
+    <form id="loginForm" action="/login" method="post">
+        <div class="form-group">
+            <label for="username">Username or Email:</label>
+            <input type="text" id="username" name="username" required>
+            <div class="error-message" id="username-error" style="color: red; display: none;">Please enter a username or email</div>
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <div class="error-message" id="password-error" style="color: red; display: none;">Please enter a password</div>
+        </div>
+        <button type="button" onclick="validateForm()">Login</button>
+    </form>
+</section>
+
+
+
+<section class="footer">
+
+  
+
+    <div class="credit"> created by <span>SEPHORA</span> || all rights reserved! </div>
+
+</section>
+
+
+
+ <script src="main.js" defer data-deferred="1"></script>
+
+ <script>
+   function validateForm() {
+    var usernameInput = document.getElementById('username');
+    var passwordInput = document.getElementById('password');
+    var usernameError = document.getElementById('username-error');
+    var passwordError = document.getElementById('password-error');
+
+    if (usernameInput.value.trim() === '') {
+        usernameError.style.display = 'block';
+    } else {
+        usernameError.style.display = 'none';
+    }
+
+    if (passwordInput.value.trim() === '') {
+        passwordError.style.display = 'block';
+    } else {
+        passwordError.style.display = 'none';
+    }
+}
+    </script>
+    
+ </body>
+</html>

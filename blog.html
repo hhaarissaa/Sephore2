@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEPHORA </title>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+
+<section id="header" class="header">
+    <a href="index.html" class="logo">SEPHORA</a>
+    <nav class="navbar">
+    <a href="index.html">home</a>
+    <a href="about.html">about</a>
+    <a href="shop.html">shop</a>
+    <a href="blog.html">blogs</a>
+    <a href="login.html">login</a>
+</nav>
+
+<div class="icons">
+    <div id="menu-btn" class="fas fa-bars"></div>
+    <a href="#" class="fas fa-heart"></a>
+    <a href="#" class="fas fa-shopping-cart"></a>
+</div>
+</section>
+
+
+
+
+
+<section class="home" id="home">
+
+    <div class="slide active" style="background:url(img/home-bg-1.jpg) no-repeat; background-size:cover;
+    background-position: center;">
+    <div class="content">
+        <span>Blog </span>
+    </div>
+    </div>
+
+    <div class="slide" style="background:url(img/home-bg-2.jpg) no-repeat; background-size:cover;
+    background-position: center;">
+    <div class="content">
+        <span>Blog </span>
+    </div>
+    </div>
+
+    <div class="slide" style="background:url(img/home-bg-3.jpg) no-repeat; background-size:cover;
+    background-position: center;">
+    <div class="content">
+        <span>Blog </span>
+    </div>
+    </div>
+
+    <div id="next-slide" onclick="next()" class="fas fa-angle-right"></div>
+    <div id="prev-slide" onclick="prev()" class="fas fa-angle-left"></div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="blogs" id="blogs">
+    <h1 class="heading">our daily <span>blogs</span></h1>
+    <div class="box-container">
+
+        <div class="box">
+            <div class="img">
+                <img decoding="async" src="img/chrisjpeg.jpeg" alt="">
+            </div>
+            <div class="content">
+                <div class="date">
+                <h3>10</h3>
+                <span>dec</span>
+            </div>
+            <!-- <a href="#" class="user"><i class="fas fa-user"></i> by admin</a> -->
+            <a href="#" class="title"> Holiday 2024...</a>
+            <p>Holiday 2024 Shopping Advice Thread: What’s in Your Basket?</p>
+            <a href="#" class="btn">read more</a>
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="img">
+            <img decoding="async" src="img/blog-2.jpg" alt="">
+        </div>
+        <div class="content">
+            <div class="date">
+            <h3>10</h3>
+            <span>dec</span>
+        </div>
+        <!-- <a href="#" class="user"><i class="fas fa-user"></i> by admin</a> -->
+        <a href="#" class="title"> Saturday Surfing, 2023!</a>
+        <p>Happy Caturday, sweet girl!
+
+            Is anyone putting up their tree today?</p>
+        <a href="#" class="btn">read more</a>
+    </div>
+</div>
+
+<div class="box">
+    <div class="img">
+        <img decoding="async" src="img/blog-3.jpg" alt="">
+    </div>
+    <div class="content">
+        <div class="date">
+        <h3>11</h3>
+        <span>dec</span>
+    </div>
+    <!-- <a href="#" class="user"><i class="fas fa-user"></i> by admin</a> -->
+    <a href="#" class="title"> Makeup and Beauty...</a>
+    <p>So…what is the Monday <br>Poll?
+    </p>
+    <a href="#" class="btn">read more</a>
+</div>
+</div>
+
+
+    </div>
+</section>
+
+
+
+
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a class="link" href="index.html"> <i class="fas fa-angle-right"></i> home</a>
+            <a class="link" href="about.html"> <i class="fas fa-angle-right"></i> about</a>
+            <a class="link" href="shop.html"> <i class="fas fa-angle-right"></i> shop</a>
+            <a class="link" href="blog.html"> <i class="fas fa-angle-right"></i> blogs</a>
+            <a class="link" href="login.html"> <i class="fas fa-angle-right"></i> blogs</a>
+        </div>
+
+        <div class="box">
+            <h3>extra links</h3>
+            <a class="link" href="#"> <i class="fas fa-angle-right"></i> my favorite </a>
+            <a class="link" href="#"> <i class="fas fa-angle-right"></i> my order </a>
+            <a class="link" href="#"> <i class="fas fa-angle-right"></i> my wishlist </a>
+            <a class="link" href="#"> <i class="fas fa-angle-right"></i> private policy </a>
+            <a class="link" href="#"> <i class="fas fa-angle-right"></i> terms of use </a>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <a class="link" href="#"> <i class="fas fa-phone"></i> +383 44 111 222 </a>
+            <a class="link" href="#"> <i class="fas fa-phone"></i> +383 44 111 222 </a>
+            <a class="link" href="#"> <i class="fas fa-envelope"></i> sephora@gmail.com </a>
+            <a class="link" href="#"> <i class="fas fa-map"></i> Prishtina, Kosova </a>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>newsletter</h3>
+            <p>subscribe for latest updates</p>
+            <form action="">
+                <input type="email" name="" placeholder="enter your email" id="" class="email">
+                <input type="submit" value="subscribe" class="btn">
+            </form>
+        </div>
+
+    </div>
+
+    <div class="credit"> created by <span>SEPHORA</span> || all rights reserved! </div>
+
+</section>
+
+
+
+ <script src="main.js" defer data-deferred="1"></script> </body>
+</html>
